@@ -1,0 +1,311 @@
+*{
+
+  margin: 0;
+
+}
+
+@font-face {
+    font-family: ddiam;
+    src: url(Diam-p7pnr.otf);
+}
+
+@font-face {
+    font-family: mont_light;
+    src: url(Mont-ExtraLightDEMO.otf);
+}
+
+@font-face {
+    font-family: mont_heavy;
+    src: url(Mont-HeavyDEMO.otf);
+}
+
+@font-face {
+    font-family: msrt_bold;
+    src: url(Montserrat-Bold.otf);
+}
+
+header{
+    background-color: black;
+    height: 8vh;
+    min-height: 5vh;
+    position: static;
+}
+
+.charchives{
+    color: rgb(255, 255, 255);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30;
+    font-weight: 500;
+    padding: 10;
+    position: absolute;
+}
+
+nav a{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+    padding: 25;
+    color: white;
+    font-size: 120%;
+    font-weight: 500;
+}
+
+nav a:hover{
+    background-color: rgb(19, 19, 19);
+}
+
+#a1{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+    padding: 25;
+    color: rgb(0, 0, 0);
+    font-size: 120%;
+    font-weight: 500;
+    background-color: rgb(210, 66, 66);
+}
+
+nav{
+    position: absolute;
+    display: block;
+    margin-left: 35%;
+    margin-top: 15;
+}
+
+.main{
+    background-image: url("COVER.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.left{
+    width: 50%;
+    float: left;
+    padding: 50;
+}
+
+.right{
+    width: 50%;
+    float: right;
+}
+
+.big{
+    font-family: ddiam;
+    font-size: 100;
+    line-height: 1;
+    margin-top: 10%;
+    color: rgb(210, 66, 66);
+}
+
+.heading{
+    font-family: ddiam;
+    font-size: 80;
+    color: rgb(255, 255, 255);
+    padding-top: 2.5%;
+    margin-left: 2.5%;
+    padding-bottom: 2.5%;
+}
+
+.heading_black{
+    font-family: ddiam;
+    font-size: 80;
+    color: rgb(0, 0, 0);
+    padding-top: 7.5%;
+    margin-left: 2.5%;
+}
+
+#caption{
+    font-family: msrt_bold;
+    font-size: 20;
+    color: rgb(210, 66, 66);
+    padding: 5%;
+    text-align: right;
+    padding-top: 65vh;
+    padding-left: 65%;
+    font-weight: 500;
+}
+
+footer{
+    color: rgb(255, 255, 255);
+    font-size: 2vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: black;
+    width: 100%;
+    color: white;
+    text-align: center;
+    z-index: 1;
+    padding-top: 10;
+    padding-bottom: 10;
+}
+
+#portrait{
+    background-color: rgb(210, 66, 66);
+    width: 100%;
+    height: 110vh;
+}
+
+.slider {
+    margin-left: 20%;
+    position: relative;
+    width: 60%;
+    overflow: hidden;
+    margin-bottom: 1.5%;
+}
+
+.images {
+    display: flex;
+    width: 100%;
+}
+
+.images img {
+    height: 70vh;
+    width: 100%;
+    transition: all 0.5s ease;
+}
+
+.images img:hover{
+    scale: 110%;
+}
+
+.images input {
+    display: none;
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+
+.dots label {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: solid #fff 3px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    margin: 5px;
+    margin-top: 5vh;
+}
+
+.dots label:hover {
+    background: #fff;
+}
+
+#img1:checked ~ .m1 {
+    margin-left: 0;
+}
+
+#img2:checked ~ .m2 {
+    margin-left: -100%;
+}
+
+#img3:checked ~ .m3 {
+    margin-left: -200%;
+}
+
+#img4:checked ~ .m4 {
+    margin-left: -300%;
+}
+
+#film{
+    height: 110vh;
+
+}
+
+.cont_left{
+    width: 40%;
+    float: left;
+}
+
+.cont_right{
+    width: 60%;
+    float: right;
+}
+
+.small_container{
+    margin-top: 5vh;
+    height: 65vh;
+    width: 500;
+    background-color: rgb(210, 66, 66);
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px 5px #888888;
+    margin-left: 5%;
+}
+
+.small_container:hover{
+    background-color: rgba(210, 66, 66, 0.816);
+    height: 70vh;
+    width: 515;
+    transition: .25s ease;
+}
+
+.kamay{
+    background-image: url("kamaycover.png");
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 80%;
+    border-radius: 10px;
+}
+
+.kabalaka{
+    background-image: url("kabalaka.png");
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 80%;
+    border-radius: 10px;
+
+}
+
+.filmtitles{
+    font-family: ddiam;
+    font-size: 100;
+    color: rgb(255, 255, 255);
+    padding: 15%;
+    padding-top: 40%;
+    text-shadow: 10px 10px 20px #000000;
+}
+
+.filmtitles2{
+    font-family: ddiam;
+    font-size: 90;
+    color: rgb(255, 255, 255);
+    padding: 15%;
+    padding-top: 35%;
+    text-shadow: 10px 10px 20px #000000;
+}
+
+.more{
+    position: absolute;
+    font-family: ddiam;
+    font-size: 60;
+    color:  rgb(210, 66, 66);
+    margin-left: 85%;
+    margin-top: 20%;
+}
+
+.more:hover{
+    scale: 110%;
+    transition: .25s ease;
+}
+
+#aboutus{
+    background-color: rgb(210, 66, 66);
+    width: 100%;
+    height: 100vh;
+}
+
+.info{
+    font-family: ddiam;
+    color: white;
+    font-size: 150;
+    padding: 200px;
+}
+
+#nodeco{
+    text-decoration: none;
+}
