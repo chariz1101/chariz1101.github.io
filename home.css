@@ -144,73 +144,85 @@ footer{
     height: 110vh;
 }
 
-.slider {
-    margin-left: 20%;
-    position: relative;
-    width: 60%;
-    overflow: hidden;
-    margin-bottom: 1.5%;
-}
-
-.images {
-    display: flex;
-    width: 100%;
-}
-
-.images img {
-    height: 70vh;
-    width: 100%;
-    transition: all 0.5s ease;
-}
-
-.images img:hover{
-    scale: 110%;
-}
-
-.images input {
-    display: none;
-}
-
-.dots {
-    display: flex;
-    justify-content: center;
-    margin: 5px;
-}
-
-.dots label {
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
-    border: solid #fff 3px;
-    cursor: pointer;
-    transition: all 0.5s ease;
-    margin: 5px;
-    margin-top: 5vh;
-}
-
-.dots label:hover {
-    background: #fff;
-}
-
-#img1:checked ~ .m1 {
-    margin-left: 0;
-}
-
-#img2:checked ~ .m2 {
-    margin-left: -100%;
-}
-
-#img3:checked ~ .m3 {
-    margin-left: -200%;
-}
-
-#img4:checked ~ .m4 {
-    margin-left: -300%;
-}
 
 #film{
     height: 110vh;
+}
 
+.p_cont_left{
+    width: 60%;
+    float: left;
+}
+
+.p_cont_right{
+    width: 40%;
+    float: right;
+}
+
+.small_container1{
+    margin-top: 5vh;
+    height: 65vh;
+    width: 500;
+    background-color: rgb(210, 66, 66);
+    border-radius: 10px;
+    margin-left: 35%;
+}
+
+.small_container1:hover{
+    background-color: rgba(210, 66, 66, 0.816);
+    height: 70vh;
+    width: 515;
+    transition: .25s ease;
+}
+
+.small_container2{
+    margin-top: 5vh;
+    height: 65vh;
+    width: 500;
+    background-color: rgb(210, 66, 66);
+    border-radius: 10px;
+    margin-left: 5%;
+}
+
+.small_container2:hover{
+    background-color: rgba(210, 66, 66, 0.816);
+    height: 70vh;
+    width: 515;
+    transition: .25s ease;
+}
+
+.img1{
+    background-image: url("7.jpg");
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 80%;
+    border-radius: 10px;
+}
+
+.img2{
+    background-image: url("2.jpg");
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 80%;
+    border-radius: 10px;
+}
+
+.more1{
+    position: absolute;
+    font-family: ddiam;
+    font-size: 60;
+    color:  rgb(255, 255, 255);
+    margin-left: 5%;
+    margin-top: 17.5%;
+}
+
+.more1:hover{
+    scale: 110%;
+    transition: .25s ease;
 }
 
 .cont_left{
@@ -302,10 +314,15 @@ footer{
 .info{
     font-family: ddiam;
     color: white;
-    font-size: 150;
+    font-size: 145;
     padding: 200px;
 }
 
 #nodeco{
     text-decoration: none;
+}
+
+.info:hover{
+    font-size: 150;
+    text-shadow: 5px 5px 1px #680000;
 }
